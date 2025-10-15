@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Tobías Pagano",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": 291.82, "left": 107.92, "attrs": {} }
+  ],
+  "connections": [
+    [ "imu1:GND", "uno:GND.3", "black", [ "v-48", "h9.68" ] ],
+    [ "imu1:VCC", "uno:5V", "red", [ "v-28.8", "h0.08" ] ],
+    [ "imu1:SCL", "uno:A5", "green", [ "v-67.2", "h76.88", "v0", "h19.2" ] ],
+    [ "imu1:SDA", "uno:A4", "green", [ "v-38.4", "h86.48" ] ]
+  ],
+  "dependencies": {}
+}
